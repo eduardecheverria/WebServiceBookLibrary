@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/estilos_setUser.css">
+    <title>Proyecto final 2</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="setUser.html">Set User</a>
+            <a href="#">Update user</a>
+            <a href="setUserInfo.html">Set User Info</a>
+            <a href="updateUserInfo.html">Update User Info</a>
+            <a href="getUsers.html">Get users</a>
+            <a href="getUsersInfo.html">Get users info</a>
+        </nav>
+    </header>
+    <section class="usuarios">
+        
+            <ul id="usuarios">
+
+            </ul>
+            <button onclick="getUsers()">Obtener Usuarios</button>
+    </section>
+    <div class="grid" id="grid">
+        <div class="mensaje" id="mensaje">
+            <div class="cargando" id="cargando">
+                <div class="circulo circulo1"></div>
+                <div class="circulo circulo2"></div>
+                <div class="circulo circulo3"></div>
+            </div>
+            <div class="respuesta" id="respuesta">
+                <h3>Respuesta del servidor</h3>
+                <div>
+                    <label>Code</label> <label id="code"></label>
+                </div>
+                <div>
+                    <label>Message</label> <label id="message"></label>
+                </div>
+                <div>
+                    <label>Data</label> <label id="data"></label>
+                </div>
+                <div>
+                    <label>Status</label> <label id="status"></label>
+                </div>
+                <button onclick="cerrar_grid()">Aceptar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/setUser.js"></script>
+</body>
+</html>

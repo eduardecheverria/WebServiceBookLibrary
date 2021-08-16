@@ -1,0 +1,213 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: white;
+    height:100vh;
+    width:100%;
+}
+header{
+    background-color: #506AD4;
+    height:50px;
+    position:relative;
+    z-index:1;
+}
+nav{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    margin: 20px 10px;
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:100vh;
+    position:relative;
+    z-index:0;
+}
+form{
+    background:#FFFCE6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:300px;
+    border-radius:10px;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    animation-name: llegar;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+@keyframes llegar {
+    from{
+        transform:scaleX(.8);
+        opacity:0;
+    }
+    to{
+        transform:scaleX(1);
+        opacity:1;
+    }
+}
+h2{
+    margin:20px 0;
+    color:#222222;
+    font-weight: bolder;
+}
+input{
+    width:80%;
+    margin:20px 0;
+    border:1px solid #b1b1b1;
+    padding:5px;
+    border-radius:5px 10px;
+}
+button{
+    width:80%;
+    margin:20px 0;
+    border:0;
+    padding:5px;
+    border-radius:5px 10px;
+    background:#506AD4;
+    color:white;
+}
+button:active{
+    border:1px solid #506AD4;
+    padding: 5px 10px;
+    
+    color:#506AD4;
+    background:white;
+}
+.grid{
+    position:fixed;
+    z-index:2;
+    width:100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.75);
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.mensaje{
+    width:50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+.cargando{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circulo{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    margin:0 5px;
+}
+.circulo1{
+    background:#999;
+    animation-name: circulo1;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+    animation-timing-function: ease;
+}
+.circulo2{
+    background: #666;
+    animation-name: circulo2;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+    animation-timing-function: ease;
+}
+.circulo3{
+    background:#333;
+    animation-name: circulo3;
+    animation-iteration-count: infinite;
+    animation-duration:1s;
+    animation-timing-function: ease;
+}
+@keyframes circulo1 {
+    33%{
+        background:#999;
+    }
+    66%{
+        background: #666;
+    }
+    100%{
+        background:#333;
+    }
+}
+@keyframes circulo2 {
+    33%{
+        background: #666;
+        
+    }
+    66%{
+        background:#333;
+    }
+    100%{
+        background:#999;
+    }
+}
+@keyframes circulo3 {
+    33%{
+        background:#333;
+        
+    }
+    66%{
+        background: #666;
+    }
+    100%{
+        background:#999;
+    }
+}
+.respuesta{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    display: none;
+}
+.respuesta div,.respuesta h3{
+    margin:10px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:80%;
+}
+.respuesta h3{
+    margin:10px 0;
+}
+
+.usuarios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+table {     
+    font-size: 12px;    margin: 45px;     width: 480px; text-align: left;    border-collapse: collapse; }
+
+th {     font-size: 13px;     font-weight: normal;     padding: 8px;     background: #b9c9fe;
+    border-top: 4px solid #aabcfe;    border-bottom: 1px solid #fff; color: #039; }
+
+td {    padding: 8px;     background: #e8edff;     border-bottom: 1px solid #fff;
+    color: #669;    border-top: 1px solid transparent; }
+
+tr:hover td { background: #d0dafd; color: #339; }
